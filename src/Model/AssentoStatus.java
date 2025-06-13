@@ -1,9 +1,9 @@
 package Model;
 
 public enum AssentoStatus {
-    DISPONIVEL("Disponível"),
+    DISPONIVEL("Disponivel"),
     RESERVADO("Reservado"),
-    INDISPONIVEL("Indisponível");
+    INDISPONIVEL("Indisponivel");
 
     private final String descricao;
 

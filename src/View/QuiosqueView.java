@@ -13,7 +13,7 @@ public class QuiosqueView implements AssentoListener {
 
     @Override
     public void estadoAssentoAlterado(AssentoEvent event) {
-        System.out.println(">>> QUIOSQUE: Recebi atualização sobre o assento " + event.getAssento().getNumero() + ". Atualizando lista.");
+        System.out.println(">>> QUIOSQUE: Recebi atualizacao sobre o assento " + event.getAssento().getNumero() + ". Atualizando lista.");
         exibirLista();
     }
 

@@ -14,7 +14,7 @@ public class Main {
             onibus.adicionarListener(quiosque);
             ControleRodoviaria controller = new ControleRodoviaria(onibus);
 
-            System.out.println("### Início da Simulação ###");
+            System.out.println("### Inicio da Simulacao ###");
 
             controller.executarReserva(5);
             controller.executarCompra(8);

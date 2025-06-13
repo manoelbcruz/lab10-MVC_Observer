@@ -8,8 +8,8 @@ public class AssentoStatusTest {
 
     @Test
     void testGetDescricao() {
-        assertEquals("Disponível", AssentoStatus.DISPONIVEL.getDescricao());
+        assertEquals("Disponivel", AssentoStatus.DISPONIVEL.getDescricao());
         assertEquals("Reservado", AssentoStatus.RESERVADO.getDescricao());
-        assertEquals("Indisponível", AssentoStatus.INDISPONIVEL.getDescricao());
+        assertEquals("Indisponivel", AssentoStatus.INDISPONIVEL.getDescricao());
     }
 }

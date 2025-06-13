@@ -18,13 +18,13 @@ public class Onibus {
     }
 
     public void adicionarListener(AssentoListener listener) {
-        if (listener == null) throw new IllegalArgumentException("O listener não pode ser nulo");
+        if (listener == null) throw new IllegalArgumentException("O listener nao pode ser nulo");
         this.listeners.add(listener);
     }
 
     public void reservar(int numeroAssento) {
         Assento assento = getAssentoByNumero(numeroAssento);
-        if (assento == null) throw new IllegalArgumentException("Assento #" + numeroAssento + " não existe");
+        if (assento == null) throw new IllegalArgumentException("Assento #" + numeroAssento + " nao existe");
         if (assento.getStatus() == AssentoStatus.DISPONIVEL) {
             assento.setStatus(AssentoStatus.RESERVADO);
             System.out.println("Model: Assento " + numeroAssento + " foi reservado.");
@@ -34,7 +34,7 @@ public class Onibus {
 
     public void comprar(int numeroAssento) {
         Assento assento = getAssentoByNumero(numeroAssento);
-        if (assento == null) throw new IllegalArgumentException("Assento #" + numeroAssento + " não existe");
+        if (assento == null) throw new IllegalArgumentException("Assento #" + numeroAssento + " nao existe");
         if ((assento.getStatus() == AssentoStatus.DISPONIVEL || assento.getStatus() == AssentoStatus.RESERVADO)) {
             assento.setStatus(AssentoStatus.INDISPONIVEL);
             System.out.println("Model: Assento " + numeroAssento + " foi comprado.");

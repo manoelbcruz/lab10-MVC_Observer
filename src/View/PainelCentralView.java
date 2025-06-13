@@ -12,12 +12,12 @@ public class PainelCentralView implements AssentoListener {
 
     @Override
     public void estadoAssentoAlterado(AssentoEvent event) {
-        System.out.println(">>> PAINEL CENTRAL: Notificação recebida para o assento " + event.getAssento().getNumero());
+        System.out.println(">>> PAINEL CENTRAL: Notificacao recebida para o assento " + event.getAssento().getNumero());
         desenharPainel();
     }
 
     public void desenharPainel() {
-        System.out.println("\n--- PAINEL CENTRAL DA RODOVIÁRIA ---");
+        System.out.println("\n--- PAINEL CENTRAL DA RODOVIARIA ---");
         for (Assento a : model.getAssentos()) {
             String cor;
 
