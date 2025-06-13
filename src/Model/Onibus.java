@@ -2,7 +2,6 @@ package Model;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import View.AssentoEvent;
 import View.AssentoListener;
 

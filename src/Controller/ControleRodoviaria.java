@@ -1,4 +1,4 @@
-package Controllers;
+package Controller;
 
 import Model.Onibus;
 
@@ -11,12 +11,12 @@ public class ControleRodoviaria {
     }
     public void executarReserva(int numeroAssento) {
         if(numeroAssento <= 0) throw new IllegalArgumentException("");
-        System.out.println("\nController: Recebida solicitação para RESERVAR assento " + numeroAssento);
+        System.out.println("\nController: Recebida solicitacao para RESERVAR assento " + numeroAssento);
         model.reservar(numeroAssento);
     }
 
     public void executarCompra(int numeroAssento) {
-        System.out.println("\nController: Recebida solicitação para COMPRAR assento " + numeroAssento);
+        System.out.println("\nController: Recebida solicitacao para COMPRAR assento " + numeroAssento);
         model.comprar(numeroAssento);
     }
 }

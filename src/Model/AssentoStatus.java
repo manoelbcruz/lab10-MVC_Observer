@@ -1,5 +1,4 @@
 package Model;
-
 public enum AssentoStatus {
     DISPONIVEL("Disponivel"),
     RESERVADO("Reservado"),

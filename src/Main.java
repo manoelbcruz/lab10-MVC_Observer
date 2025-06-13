@@ -1,4 +1,4 @@
-import Controllers.ControleRodoviaria;
+import Controller.ControleRodoviaria;
 import Model.Onibus;
 import View.PainelCentralView;
 import View.QuiosqueView;
